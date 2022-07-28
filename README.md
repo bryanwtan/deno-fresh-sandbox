@@ -2,6 +2,12 @@
 
 ### Usage
 
+Install Deno:
+
+
+https://deno.land/manual/getting_started/installation
+
+
 Start the project:
 
 ```
