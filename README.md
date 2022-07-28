@@ -25,9 +25,6 @@ Interesting files
 -[example higher order component](utils/withBackgroundColor.tsx)
 
 -[example composition of many higher order components](islands/SuperCounter.ts)
-
-    1. contrived example where wrapping functions pass through the parameters unchanged.
-
-    2. any `withBackgroundColor` can be replaced with something like `connect(mapStateToProps, mapDispatchToProps)`
-
-    3. functions can expose/guard interface shapes above or below. (by accepting params at a given wrapper and passing desired props onward).
+1. contrived example where wrapping functions pass through the parameters unchanged.
+2. any `withBackgroundColor` can be replaced with something like `connect(mapStateToProps, mapDispatchToProps)`
+3. functions can expose/guard interface shapes above or below. (by accepting params at a given wrapper and passing desired props onward).
