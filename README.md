@@ -18,7 +18,7 @@ This will watch the project directory and restart as necessary.
 
 Interesting files
 
-[main page](routes/index.tsx)
-[baseline counter](islands/Counter.tsx)
-[example higher order component](utils/withBackgroundColor.tsx)
-[example composition of many higher order components](islands/SuperCounter.ts)
+-[main page](routes/index.tsx)
+-[baseline counter](islands/Counter.tsx)
+-[example higher order component](utils/withBackgroundColor.tsx)
+-[example composition of many higher order components](islands/SuperCounter.ts)
