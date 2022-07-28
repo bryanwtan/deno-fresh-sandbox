@@ -1,16 +1,19 @@
-import { ComponentType } from 'preact'
+import { h } from 'preact'
 import { compose } from 'https://deno.land/x/compose@1.3.2/index.js'
 import { withBackgroundColor } from '../utils/withBackgroundColor.tsx'
 
 import Counter, { CounterProps } from './Counter.tsx'
 
+type CounterType = ({ start }: CounterProps) => h.JSX.Element
+
 const extend = compose<
-  ComponentType<CounterProps>,
-  CounterProps,
-  CounterProps,
-  CounterProps,
-  CounterProps,
-  CounterProps
+  CounterType,
+  CounterType,
+  CounterType,
+  CounterType,
+  CounterType,
+  CounterType,
+  CounterType[]
 >(
   withBackgroundColor,
   withBackgroundColor,
@@ -20,6 +23,24 @@ const extend = compose<
   withBackgroundColor
 )
 
-const SuperCounter: ComponentType<CounterProps> = extend(Counter)
+/**
+ * o index
+ * |
+ * o wrapper
+ * |
+ * o wrapper
+ * |
+ * o wrapper
+ * |
+ * o wrapper
+ * |
+ * o wrapper
+ * |
+ * o wrapper
+ * |
+ * o Counter
+ */
+
+const SuperCounter = extend(Counter)
 
 export default SuperCounter

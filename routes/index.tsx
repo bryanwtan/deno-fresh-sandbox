@@ -22,6 +22,7 @@ export default function Home() {
         file, and refresh.
       </p>
 
+      {/* Counters with Encapsulated State */}
       <Counter start={0} />
       <br />
       <BackgroundColorCounter start={1} />
