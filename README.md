@@ -26,8 +26,8 @@ Interesting files
 
 -[example composition of many higher order components](islands/SuperCounter.ts)
 
-    1. this is a very contrived example where all of the wrapping functions pass through the parameters unchanged.
+    1. contrived example where wrapping functions pass through the parameters unchanged.
 
-    2. any given `withBackgroundColor` could be replaced with something like `connect(mapStateToProps, mapDispatchToProps)`
+    2. any `withBackgroundColor` can be replaced with something like `connect(mapStateToProps, mapDispatchToProps)`
 
-    3. wrapping functions can be used to expose a different interface shape above or below. (you would communicate that by accepting the parameters at a given wrapper and passing the props you desire onward).
+    3. functions can expose/guard interface shapes above or below. (by accepting params at a given wrapper and passing desired props onward).
